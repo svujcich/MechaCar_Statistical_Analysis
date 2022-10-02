@@ -15,13 +15,12 @@ suspension_coil <- read.csv(file='Suspension_Coil.csv',check.names=F,stringsAsFa
 total_summary  <- suspension_coil %>% summarize(Mean=mean(PSI),Median=median(PSI),Variance=var(PSI),SD=sd(PSI),.groups = 'keep') #create summary table
 lot_summary <- suspension_coil %>% group_by(Manufacturing_Lot) %>% summarize(Mean=mean(PSI),Median=median(PSI),Variance=var(PSI),SD=sd(PSI),.groups = 'keep') # group by lot #
   
-# create a table that shows the max and min PSI values per each manufacturing lot
+  #create a table that shows the max and min PSI values per each manufacturing lot
   #coils_min_max <- suspension_coil %>%group_by(Manufacturing_Lot) %>% summarize(Min_PSI=min(PSI), Max_PSI=max(PSI), .groups='keep')
 
 #3a. T-Tests on suspension Coils - sample vs. population
 population_table <- read.csv('Suspension_Coil.csv',check.names = F,stringsAsFactors = F) #import data set
-sample_table <- population_table %>% sample_n(50) #randomly sample 50 data points
-t.test(sample_table$PSI,mu=mean(1500)) #compare sample versus population means
+t.test(population_table$PSI,mu=mean(1500)) #compare sample versus population means
 
 #3b.
 Lot1 <- subset(population_table, Manufacturing_Lot == "Lot1")

@@ -20,8 +20,7 @@ lot_summary <- suspension_coil %>% group_by(Manufacturing_Lot) %>% summarize(Mea
 
 #3a. T-Tests on suspension Coils - sample vs. population
 population_table <- read.csv('Suspension_Coil.csv',check.names = F,stringsAsFactors = F) #import data set
-sample_table <- population_table %>% sample_n(50) #randomly sample 50 data points
-t.test(sample_table$PSI,mu=mean(1500)) #compare sample versus population means
+t.test(population_table$PSI,mu=mean(1500)) #compare sample versus population means
 
 #3b.
 Lot1 <- subset(population_table, Manufacturing_Lot == "Lot1")
