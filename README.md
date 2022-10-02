@@ -34,9 +34,9 @@ Given the data about the suspension coils, a t-test can be used to compare wheth
 
 When a random sample was collected from the population data, and used in a t-test against the population data, the results were as follows:
 
-![t-test_population_sample](https://user-images.githubusercontent.com/106559768/192942644-b8eb5db7-ca50-430d-a944-6034fb966d3b.png)
+![t-test_population_sample](https://user-images.githubusercontent.com/106559768/193476088-3e3dcf0f-cc62-474b-8eaf-8a99460b2f01.png)
 
-The T-Test results show that the p-value for a random sample from the population data is greater than the significance value of 0.05, whichs provide grounds to accept the null hypothesis, meaning the population data and the sample data are not statistically different. 
+The t-test results show that the p-value for a random sample from the population data is greater than the significance value of 0.05, whichs provide grounds to accept the null hypothesis, meaning the population data and the sample data are not statistically different. 
 A T-Test can also be conducted using subsets of the data from each Manufacturing lot to test whether or not the means are statistically similar to the mean or the population table. The test for subsets of each manufacturing lot would maintain the same hypotheses:
 
   - H0: There is no statistical difference between the sample and the population data
@@ -46,8 +46,8 @@ The results are as Follows:
 
 ![t-test_subset_mfg_lots](https://user-images.githubusercontent.com/106559768/192942689-616c06eb-7a9d-4581-bfcd-2346c958cd63.png)
 
-The previous image shows the results of the T-Test for manufacturing Lot1, Lot 2, and Lot 3 respectively. Both lot 1 and Lot 2 have a p value that is greater than the significance value of 0.05. In both cases, the null hypothesis is accepted, and the there is no statistical difference between the mean of the subset and the mean of the population. This conclusion aligns with the mean values for each lot discovered using the summary statistics table. 
-Looking at the T-Test results for Lot 3, the p-value is 0.04. Because the  p-value for Lot 3 is less than the significance value of 0.05, the null hypothesis is rejected and the alternate hypothesis is accepted; this means there is a statistical difference between the mean of the subset and the mean of the population. Again, this conclusion aligns with the findings from the summary statistic table, where the mean PDI of Lot 3 was determined to be less than the design specifications of 1500 PSI. 
+The previous image shows the results of the T-Test for manufacturing Lot1, Lot 2, and Lot 3 respectively. Both lot 1 and Lot 2 have a p value that is greater than the significance value of 0.05. In both cases, the null hypothesis is accepted, and the there is no statistical difference between the mean PSI of the subset and the mean PSI of the population. This conclusion aligns with the mean values for each lot discovered using the summary statistics table. 
+Looking at the T-Test results for Lot 3, the p-value is 0.04. Because the  p-value for Lot 3 is less than the significance value of 0.05, the null hypothesis is rejected and the alternate hypothesis is accepted; this means there is a statistical difference between the mean PSI of the subset and the mean PSI of the population. Again, this conclusion aligns with the findings from the summary statistic table, where the mean PSI of Lot 3 was determined to be less than the design specifications of 1500 PSI. 
 
 ## Study Design: MechaCar vs Competition
 In a market full of competition, customers have many options about where to buy a vehicle. In order to capture vehicle sales, it would be beneficial conduct additional statistical studies to determine how MechaCar compares to its competitors. One statistical test that might be of interest to consumers is how does city fuel efficiency differ from highway fuel efficiency across brands. 
